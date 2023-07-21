@@ -4,6 +4,18 @@
     <div class="col-md-12">
       <app-recipes></app-recipes>
       <app-shopping-list></app-shopping-list>
+
+      <h1>Error Handlers in angular</h1>
+
+      <div class="d-flex">
+        <button (click)="Addserver()" class="btn btn-danger">
+          remove Server
+        </button>
+        <button (click)="removeServer()" class="btn btn-danger">
+          Add server
+        </button>
+        <p>Current Servers : {{ servers.length }}</p>
+      </div>
     </div>
   </div>
 </div>
