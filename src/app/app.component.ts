@@ -6,12 +6,9 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  servers:any=[];
-  Addserver(){
-    this.servers.push("another server ");
+  loadedFeature = 'recipe';
 
-  }
-  removeServer(){
-    this.servers.pop();
+  onNavigate(feature: string) {
+    this.loadedFeature = feature;
   }
 }
